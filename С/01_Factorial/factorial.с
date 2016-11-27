@@ -6,7 +6,7 @@
 int main(void) {
 	
 	// В цикле выводим факториал от 1 до 10
-	for (unsigned int i=0;i<=10;i++){
+	for (unsigned int i=1;i<=10;i++){
 		printf("f(%i)=%i\n",i,factorial(i));
 	}
 	return 0;
@@ -20,8 +20,6 @@ int main(void) {
  			f - факториал числа n
  */	
  int factorial(unsigned int n){
- 	
- 	if (n==0) return 1;
 	
 	// Условие избавляет от лишних циклов
 	if (n>2){
@@ -34,3 +32,4 @@ int main(void) {
 		return n;
 	
 }
+
